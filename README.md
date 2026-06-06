@@ -4,7 +4,7 @@ A modern College Discovery Platform (Frontend) built with **Next.js**, **TypeScr
 
 ## 🚀 Live Demo
 
-**Live Website:** [https://collegehub-frontend-mwsdd6pvp-aditi-collegehub.vercel.app/]
+**Live Website:** [https://collegehub-frontend-mwsdd6pvp-aditi-collegehub.vercel.app?_vercel_share=HgBCZ8XUacszAWmUMDzX9DuI4VXiCMHd]
 
 **GitHub Repository:** [https://github.com/Ziggyyyyyyyy/collegehub-frontend.git]
 
