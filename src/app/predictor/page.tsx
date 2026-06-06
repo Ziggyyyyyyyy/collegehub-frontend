@@ -6,11 +6,12 @@ import { COLLEGES } from '@/data/colleges';
 import { Container } from '@/components/layout/container';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { College } from '@/types';
 
 export default function PredictorPage() {
   const [exam, setExam] = useState('JEE Advanced');
   const [rank, setRank] = useState('');
-  const [results, setResults] = useState<any[]>([]);
+  const [results, setResults] = useState<College[]>([]);
 
   const predictColleges = () => {
     const userRank = Number(rank);
