@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --background: 40 33% 96%; /* #F7F5F0 */
+    --surface: 0 0% 100%; /* #FFFFFF */
+    --card: 0 0% 100%; /* #FFFFFF */
+
+    /* Text Colors */
+    --foreground: 0 0% 10%; /* #1A1A1A */
+    --text-primary: 0 0% 10%; /* #1A1A1A */
+    --text-secondary: 0 0% 40%; /* #666666 */
+    --text-tertiary: 0 0% 60%; /* #999999 */
+    --text-disabled: 0 0% 70%; /* #B3B3B3 */
+    --muted: 40 33% 91%; /* #F1F0EB */
+    --muted-foreground: 0 0% 40%; /* #666666 */
+
+    /* Primary/Accent */
+    --primary: 38 92% 50%; /* #F59E0B */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --primary-hover: 32 95% 44%; /* #D97706 */
+    --primary-light: 48 96% 89%; /* #FFFBEB */
+    --accent: 48 96% 89%; /* #FFFBEB */
+    --accent-foreground: 38 92% 50%; /* #F59E0B */
+
+    /* Secondary */
+    --secondary: 40 33% 91%; /* #F1F0EB */
+    --secondary-foreground: 0 0% 10%; /* #1A1A1A */
+
+    /* Semantic Colors */
+    --success: 152 81% 45%; /* #10B981 */
+    --success-foreground: 0 0% 100%; /* #FFFFFF */
+    --success-light: 152 81% 91%; /* #D1FAE5 */
+    --destructive: 0 84% 60%; /* #EF4444 */
+    --destructive-foreground: 0 0% 100%; /* #FFFFFF */
+    --destructive-light: 0 84% 95%; /* #FEE2E2 */
+
+    /* UI Elements */
+    --border: 30 15% 88%; /* #E5E3DF */
+    --input: 30 15% 88%; /* #E5E3DF */
+    --ring: 38 92% 50%; /* #F59E0B */
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 0 0% 10%; /* #1A1A1A */
+    --card-foreground: 0 0% 10%; /* #1A1A1A */
+
+    /* Border Radius */
+    --radius-xs: 0.25rem; /* 4px */
+    --radius-sm: 0.5rem; /* 8px */
+    --radius-md: 0.75rem; /* 12px */
+    --radius-lg: 1rem; /* 16px */
+
+    /* Shadows (Elevation) */
+    --shadow-elevation-1: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-elevation-2: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+    --shadow-elevation-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-elevation-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-text-primary font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .shimmer {
+    background: linear-gradient(90deg, hsl(var(--muted)) 0%, hsl(var(--secondary)) 50%, hsl(var(--muted)) 100%);
+    background-size: 200% 100%;
+  }
+}
